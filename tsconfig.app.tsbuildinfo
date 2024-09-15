@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/global.d.ts","./src/main.tsx","./src/selectors.ts","./src/store.ts","./src/type.ts","./src/api/userapi.ts","./src/features/users/usersslice.ts","./src/pages/layoutusers.tsx","./src/pages/index.ts","./src/pages/components/userstable/userstable.tsx","./src/pages/components/userstable/index.ts"],"version":"5.6.2"}
