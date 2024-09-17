@@ -41,7 +41,7 @@ export const UsersTable: React.FC = () => {
       ),
     },
     {
-      title: "UserName",
+      title: "User Name",
       dataIndex: "username",
       key: "username",
       filterDropdown: () => (
