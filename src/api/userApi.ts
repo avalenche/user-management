@@ -1,6 +1,6 @@
 import axios, { AxiosError } from "axios";
 
-//const API_URL = "https://66e15e4ec831c8811b54b009.mockapi.io/users";
+// const API_URL = "https://66e15e4ec831c8811b54b009.mockapi.io/users";
 
 const API_URL = "https://jsonplaceholder.typicode.com/users/";
 
