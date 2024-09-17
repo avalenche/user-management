@@ -1,12 +1,12 @@
 import { Provider } from "react-redux";
+import { RouterProvider } from "react-router-dom";
+import { routes } from "./pages/routes";
 import store from "./store";
-import { LayoutUsers } from "./pages";
 
 function App() {
   return (
     <Provider store={store}>
-      {/* TODO add router */}
-      <LayoutUsers />
+      <RouterProvider router={routes} />
     </Provider>
   );
 }

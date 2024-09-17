@@ -1,19 +1,19 @@
 import { Layout, Menu, theme } from "antd";
 import { UserOutlined, InfoOutlined } from "@ant-design/icons";
-import { UsersTable } from "./components/UsersTable";
+import { Link, Outlet } from "react-router-dom";
 import styles from "./LayoutUsers.module.scss";
 
 const { Content, Footer, Sider } = Layout;
 const items = [
   {
-    key: "1",
+    key: "users",
     icon: <UserOutlined />,
-    label: "Users",
+    label: <Link to={"/"}>Users</Link>,
   },
   {
-    key: "2",
+    key: "information",
     icon: <InfoOutlined />,
-    label: "Information",
+    label: <Link to={"/information"}>Information</Link>,
   },
 ];
 
@@ -27,9 +27,9 @@ export const LayoutUsers = () => {
       <Sider className={styles.sider} breakpoint="lg" collapsedWidth="0">
         <Menu
           className={styles.menu}
-          defaultSelectedKeys={["1"]}
+          defaultSelectedKeys={["users"]}
           items={items}
-        />
+        ></Menu>
       </Sider>
       <Layout className={styles.layout}>
         <Content
@@ -42,7 +42,7 @@ export const LayoutUsers = () => {
           }}
         >
           <h1 className={styles.h1}>User management table</h1>
-          <UsersTable />
+          <Outlet />
         </Content>
         <Footer className={styles.footer}>
           Design ©{new Date().getFullYear()}
